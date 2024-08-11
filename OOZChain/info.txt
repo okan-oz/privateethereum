@@ -1,0 +1,24 @@
+Node1
+Public address of the key:   0x52D06c1019Eb73b8863982e6b04570BD0b145222
+Path of the secret key file: data/keystore/UTC--2024-08-08T20-14-45.610088000Z--52d06c1019eb73b8863982e6b04570bd0b145222
+Password : GulOz.1986
+
+
+Node2 
+Public address of the key:   0xEc9f0885818B3684F2526CBf2880A2c02cb03bc1
+Path of the secret key file: data/keystore/UTC--2024-08-08T20-15-09.773396000Z--ec9f0885818b3684f2526cbf2880a2c02cb03bc1
+Password : GulOz.1986
+
+
+enode://1dab696cc2ec724c2f2b425daf8d28e122d547b8fd369040a85e921b1ba188a567a34e2af900d9b5e0e737a40a00656af68e6e5f720ee2c769a8c24d0eeb1ff1@127.0.0.1:0?discport=30301
+
+Node1 
+geth --datadir "./data" --port 30304 --bootnodes "enode://1dab696cc2ec724c2f2b425daf8d28e122d547b8fd369040a85e921b1ba188a567a34e2af900d9b5e0e737a40a00656af68e6e5f720ee2c769a8c24d0eeb1ff1@127.0.0.1:0?discport=30301" --authrpc.port 8547 --ipcdisable --allow-insecure-unlock --http --http.corsdomain="https://remix.ethereum.org, http://127.0.0.1:8000" --http.api "web3,eth,debug,personal,net" --networkid 1234567 --unlock 0x52D06c1019Eb73b8863982e6b04570BD0b145222 --password "password.txt" --mine --miner.etherbase 0x52D06c1019Eb73b8863982e6b04570BD0b145222
+
+Node2
+
+geth --datadir "./data" --port 30306 --bootnodes "enode://7c8ae5080a4e655b82868853abf24164dc62a13f16118ae0e9a6d6446fa5013e7e7809912474057836628804837380549d680b29f26b350c1350dad385e2b538@127.0.0.1:0?discport=30301" --authrpc.port 8546 --networkid 1234567 --unlock 0xEc9f0885818B3684F2526CBf2880A2c02cb03bc1 --password password.txt
+geth --datadir "./data" --port 30306 --bootnodes "enode://7c8ae5080a4e655b82868853abf24164dc62a13f16118ae0e9a6d6446fa5013e7e7809912474057836628804837380549d680b29f26b350c1350dad385e2b538@127.0.0.1:0?discport=30301" --authrpc.port 8546 --networkid 1234567 --unlock 0xEc9f0885818B3684F2526CBf2880A2c02cb03bc1 --password password.txt
+
+
+
